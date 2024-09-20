@@ -228,7 +228,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="index.html">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
@@ -311,34 +311,34 @@
         <h5 class="card-title">Agregar receta</h5>
 
         <!-- Horizontal Form -->
-        <form>
-          <div class="row mb-3">
-            <label for="nombre" class="col-sm-2 col-form-label"  required >Nombre medico</label>
-            <div class="col-sm-10">
+        <form class="row" method="post" action="">
+          <div class="col-md-6 mb-3">
+            <label for="nombre" class=" col-form-label"  required >Nombre medico</label>
+            <div class="">
               <input type="text" class="form-control" id="nombre">
             </div>
           </div>
-          <div class="row mb-3">
-            <label for="identificacionP" class="col-sm-2 col-form-label"  required>Identificación paciente</label>
-            <div class="col-sm-10">
+          <div class="col-md-6 mb-3">
+            <label for="identificacionP" class=" col-form-label"  required>Identificación paciente</label>
+            <div class="">
               <input type="text" class="form-control" id="identificacionP">
             </div>
           </div>
-          <div class="row mb-3">
-            <label for="nombreP" class="col-sm-2 col-form-label"  required >Nombre Paciente</label>
-            <div class="col-sm-10">
+          <div class="col-md-6 mb-3">
+            <label for="nombreP" class=" col-form-label"  required >Nombre Paciente</label>
+            <div class="">
               <input type="number" class="form-control" id="nombreP">
             </div>
           </div>
-          <div class="row mb-3">
-            <label for="cantidad" class="col-sm-2 col-form-label"  required >Cantidad</label>
-            <div class="col-sm-10">
+          <div class="col-md-6 mb-3">
+            <label for="cantidad" class=" col-form-label"  required >Cantidad</label>
+            <div class="">
               <input type="number" class="form-control" id="cantidad">
             </div>
           </div>
-          <div class="row mb-3">
-            <label for="medicamento" class="col-sm-2 col-form-label">Medicamento</label>
-            <div class="col-sm-10">
+          <div class="col-md-6 mb-3">
+            <label for="medicamento" class=" col-form-label">Medicamento</label>
+            <div class="">
                 <select class="form-select" id="medicamento">
                     <option value="">Seleccione un Medicamento</option>
                     <option value="#1">Parecetamol</option>
@@ -348,8 +348,7 @@
           </div>
       
           <div class="text-center">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-            <button type="reset" class="btn btn-secondary">Borrar</button>
+            <button type="submit" class="btn enviar">Enviar</button>
           </div>
         </form><!-- End Horizontal Form -->
 
@@ -371,7 +370,7 @@
   <script src="assets/vendor/php-correo-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main-db.js"></script>
 
 </body>
 

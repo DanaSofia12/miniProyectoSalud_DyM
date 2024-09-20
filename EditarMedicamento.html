@@ -228,7 +228,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="index.html">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
@@ -303,47 +303,46 @@
         <h5 class="card-title">Editar medicamento</h5>
 
         <!-- Horizontal Form -->
-        <form>
-          <div class="row mb-3">
-            <label for="nombre" class="col-sm-2 col-form-label"  required >Nombre</label>
-            <div class="col-sm-10">
+        <form class="row" action="" method="post">
+          <div class="col-md-6 mb-3">
+            <label for="nombre" class="col-form-label"  required >Nombre</label>
+            <div>
               <input type="text" class="form-control" id="nombre">
             </div>
           </div>
-          <div class="row mb-3">
-            <label for="descripcion" class="col-sm-2 col-form-label"  required >Descripción</label>
-            <div class="col-sm-10">
+          <div class="col-md-6 mb-3">
+            <label for="descripcion" class="col-form-label"  required >Descripción</label>
+            <div>
               <input type="text" class="form-control" id="descripcion">
             </div>
           </div>
-          <div class="row mb-3">
-            <label for="cantidad" class="col-sm-2 col-form-label"  required >Cantidad</label>
-            <div class="col-sm-10">
+          <div class="col-md-6 mb-3">
+            <label for="cantidad" class="col-form-label"  required >Cantidad</label>
+            <div>
               <input type="number" class="form-control" id="cantidad">
             </div>
           </div>
-          <div class="row mb-3">
-            <label for="precio" class="col-sm-2 col-form-label"  required >Precio</label>
-            <div class="col-sm-10">
+          <div class="col-md-6 mb-3">
+            <label for="precio" class="col-form-label"  required >Precio</label>
+            <div>
               <input type="number" class="form-control" id="precio">
             </div>
           </div>
-          <div class="row mb-3">
-            <label for="fecha" class="col-sm-2 col-form-label"  required >Fecha registro</label>
-            <div class="col-sm-10">
+          <div class="col-md-6 mb-3">
+            <label for="fecha" class="col-form-label"  required >Fecha registro</label>
+            <div>
               <input type="date" class="form-control" id="fecha">
             </div>
           </div>
-          <div class="row mb-3">
-            <label for="registro" class="col-sm-2 col-form-label"  required >Editado por: </label>
-            <div class="col-sm-10">
+          <div class="col-md-6 mb-3">
+            <label for="registro" class="col-form-label"  required >Editado por: </label>
+            <div>
               <input type="text" class="form-control" id="registro">
             </div>
           </div>
 
           <div class="text-center">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-            <button type="reset" class="btn btn-secondary">Borrar</button>
+            <button type="submit" class="btn enviar">Enviar</button>
           </div>
         </form><!-- End Horizontal Form -->
 
@@ -366,7 +365,7 @@
   <script src="assets/vendor/php-correo-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main-db.js"></script>
 
 </body>
 

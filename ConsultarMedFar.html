@@ -228,7 +228,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="index.html">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
@@ -303,83 +303,245 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title">Medicamentos en el sistema</h5>
-    
-        <!-- Table with stripped rows -->
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">id</th>
-              <th scope="col">Nombre</th>
-              <th scope="col">Descripción</th>
-              <th scope="col">Cantidad</th>
-              <th scope="col">Precio</th>
-              <th scope="col">Fecha registro</th>
-              <th scope="col">Registrado por</th>
-              <th scope="col">Fecha modificación</th>
-              <th scope="col">Acciones</th> <!-- Nueva columna para acciones -->
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Paracetamol</td>
-              <td>Medicamento para el dolor y fiebre</td>
-              <td>100</td>
-              <td>$1000</td>
-              <td>2024-09-01</td>
-              <td>Ashle Lopez</td>
-              <td>2024-09-15</td>
-              <td>
-                <!-- Iconos de editar y eliminar -->
-                <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
-                  <i class="bi bi-pencil"></i>
-                </a>
-                <a href="#" class="text-danger" title="Eliminar">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Ibuprofeno</td>
-              <td>Anti-inflamatorio para el dolor</td>
-              <td>150</td>
-              <td>$1500</td>
-              <td>2024-09-05</td>
-              <td>Julian Ortiz</td>
-              <td>2024-09-20</td>
-              <td>
-                <!-- Iconos de editar y eliminar -->
-                <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
-                  <i class="bi bi-pencil"></i>
-                </a>
-                <a href="#" class="text-danger" title="Eliminar">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Amoxicilina</td>
-              <td>Antibiótico de amplio espectro</td>
-              <td>200</td>
-              <td>$2500</td>
-              <td>2024-09-10</td>
-              <td>Julian Ortiz</td>
-              <td>2024-09-18</td>
-              <td>
-                <!-- Iconos de editar y eliminar -->
-                <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
-                  <i class="bi bi-pencil"></i>
-                </a>
-                <a href="#" class="text-danger" title="Eliminar">
-                  <i class="bi bi-trash"></i>
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- End Table with stripped rows -->
+
+          <!-- Table with stripped rows -->
+          <table class="table datatable">
+            <thead>
+              <tr>
+                <th>
+                  <b>ID</b>
+                </th>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th data-type="date" data-format="YYYY/DD/MM">Fecha registro</th>
+                <th>Registrado por </th>
+                <th data-type="date" data-format="YYYY/DD/MM">Fecha modificacón</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Paracetamol</td>
+                <td>Medicamento para el dolor y fiebre</td>
+                <td>100</td>
+                <td>$1000</td>
+                <td>2024-09-01</td>
+                <td>Ashle Lopez</td>
+                <td>2024-09-15</td>
+                <td>
+                  <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
+                    <i class="bi bi-pencil"></i>
+                  </a>
+                  <a href="#" class="text-danger" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Ibuprofeno</td>
+                <td>Anti-inflamatorio para el dolor</td>
+                <td>150</td>
+                <td>$1500</td>
+                <td>2024-09-05</td>
+                <td>Julian Ortiz</td>
+                <td>2024-09-20</td>
+                <td>
+                  <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
+                    <i class="bi bi-pencil"></i>
+                  </a>
+                  <a href="#" class="text-danger" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Amoxicilina</td>
+                <td>Antibiótico de amplio espectro</td>
+                <td>200</td>
+                <td>$2500</td>
+                <td>2024-09-10</td>
+                <td>Julian Ortiz</td>
+                <td>2024-09-18</td>
+                <td>
+                  <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
+                    <i class="bi bi-pencil"></i>
+                  </a>
+                  <a href="#" class="text-danger" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Paracetamol</td>
+                <td>Medicamento para el dolor y fiebre</td>
+                <td>100</td>
+                <td>$1000</td>
+                <td>2024-09-01</td>
+                <td>Ashle Lopez</td>
+                <td>2024-09-15</td>
+                <td>
+                  <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
+                    <i class="bi bi-pencil"></i>
+                  </a>
+                  <a href="#" class="text-danger" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Ibuprofeno</td>
+                <td>Anti-inflamatorio para el dolor</td>
+                <td>150</td>
+                <td>$1500</td>
+                <td>2024-09-05</td>
+                <td>Julian Ortiz</td>
+                <td>2024-09-20</td>
+                <td>
+                  <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
+                    <i class="bi bi-pencil"></i>
+                  </a>
+                  <a href="#" class="text-danger" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Amoxicilina</td>
+                <td>Antibiótico de amplio espectro</td>
+                <td>200</td>
+                <td>$2500</td>
+                <td>2024-09-10</td>
+                <td>Julian Ortiz</td>
+                <td>2024-09-18</td>
+                <td>
+                  <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
+                    <i class="bi bi-pencil"></i>
+                  </a>
+                  <a href="#" class="text-danger" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Paracetamol</td>
+                <td>Medicamento para el dolor y fiebre</td>
+                <td>100</td>
+                <td>$1000</td>
+                <td>2024-09-01</td>
+                <td>Ashle Lopez</td>
+                <td>2024-09-15</td>
+                <td>
+                  <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
+                    <i class="bi bi-pencil"></i>
+                  </a>
+                  <a href="#" class="text-danger" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Ibuprofeno</td>
+                <td>Anti-inflamatorio para el dolor</td>
+                <td>150</td>
+                <td>$1500</td>
+                <td>2024-09-05</td>
+                <td>Julian Ortiz</td>
+                <td>2024-09-20</td>
+                <td>
+                  <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
+                    <i class="bi bi-pencil"></i>
+                  </a>
+                  <a href="#" class="text-danger" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Amoxicilina</td>
+                <td>Antibiótico de amplio espectro</td>
+                <td>200</td>
+                <td>$2500</td>
+                <td>2024-09-10</td>
+                <td>Julian Ortiz</td>
+                <td>2024-09-18</td>
+                <td>
+                  <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
+                    <i class="bi bi-pencil"></i>
+                  </a>
+                  <a href="#" class="text-danger" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">1</th>
+                <td>Paracetamol</td>
+                <td>Medicamento para el dolor y fiebre</td>
+                <td>100</td>
+                <td>$1000</td>
+                <td>2024-09-01</td>
+                <td>Ashle Lopez</td>
+                <td>2024-09-15</td>
+                <td>
+                  <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
+                    <i class="bi bi-pencil"></i>
+                  </a>
+                  <a href="#" class="text-danger" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Ibuprofeno</td>
+                <td>Anti-inflamatorio para el dolor</td>
+                <td>150</td>
+                <td>$1500</td>
+                <td>2024-09-05</td>
+                <td>Julian Ortiz</td>
+                <td>2024-09-20</td>
+                <td>
+                  <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
+                    <i class="bi bi-pencil"></i>
+                  </a>
+                  <a href="#" class="text-danger" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Amoxicilina</td>
+                <td>Antibiótico de amplio espectro</td>
+                <td>200</td>
+                <td>$2500</td>
+                <td>2024-09-10</td>
+                <td>Julian Ortiz</td>
+                <td>2024-09-18</td>
+                <td>
+                  <a href="EditarMedicamento.html" class="text-primary me-2" title="Editar">
+                    <i class="bi bi-pencil"></i>
+                  </a>
+                  <a href="#" class="text-danger" title="Eliminar">
+                    <i class="bi bi-trash"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- End Table with stripped rows -->
       </div>
     </div>
 
@@ -399,7 +561,7 @@
   <script src="assets/vendor/php-correo-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main-db.js"></script>
 
 </body>
 

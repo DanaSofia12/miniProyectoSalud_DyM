@@ -321,41 +321,41 @@
         <h5 class="card-title">Registrar un nuevo usuario</h5>
 
         <!-- Horizontal Form -->
-        <form>
-          <div class="row mb-3">
+        <form class="row" action="" method="post">
+          <div class="col-md-6 mb-3">
             <label for="identificacion" class="col-sm-2 col-form-label" required >Identificación</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="identificacion">
+              <input type="text" class="form-control" id="identificacion" name="identificacion" >
             </div>
           </div>
-          <div class="row mb-3">
+          <div class="col-md-6 mb-3">
             <label for="nombre" class="col-sm-2 col-form-label"  required >Nombre</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="nombre">
+              <input type="text" class="form-control" id="nombre" name="nombre" >
             </div>
           </div>
-          <div class="row mb-3">
+          <div class="col-md-6 mb-3">
             <label for="correo" class="col-sm-2 col-form-label"  required >Correo</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="correo">
+              <input type="email" class="form-control" id="correo" name="correo" >
             </div>
           </div>
-          <div class="row mb-3">
+          <div class="col-md-6 mb-3">
             <label for="telefono" class="col-sm-2 col-form-label"  required >Telefono</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="telefono">
+              <input type="text" class="form-control" id="telefono" name="telefono" >
             </div>
           </div>
-          <div class="row mb-3">
+          <div class="col-md-6 mb-3">
             <label for="clave" class="col-sm-2 col-form-label"  required >Contraseña</label>
             <div class="col-sm-10">
-              <input type="password" class="form-control" id="clave">
+              <input type="password" class="form-control" id="clave" name="clave" >
             </div>
           </div>
-          <div class="row mb-3">
-            <label for="inputRole" class="col-sm-2 col-form-label">Rol</label>
+          <div class="col-md-6 mb-3">
+            <label for="rol" class="col-sm-2 col-form-label">Rol</label>
             <div class="col-sm-10">
-                <select class="form-select" id="inputRole">
+                <select class="form-select" id="rol" name="rol" >
                     <option value="">Seleccione un rol</option>
                     <option value="administrador">Administrador</option>
                     <option value="farmaceutico">Farmacéutico</option>
@@ -365,7 +365,6 @@
 
           <div class="text-center">
             <button type="submit" class="btn btn-primary">Enviar</button>
-            <button type="reset" class="btn btn-secondary">Borrar</button>
           </div>
         </form><!-- End Horizontal Form -->
 
@@ -376,7 +375,7 @@
 
   </main><!-- End #main -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arcol-md-6-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
@@ -389,7 +388,7 @@
   <script src="assets/vendor/php-correo-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main-db.js"></script>
 
 </body>
 

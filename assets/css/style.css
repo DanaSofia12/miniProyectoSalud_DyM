@@ -1062,18 +1062,34 @@ h6 {
   max-width: 120px;
 }
 
+
 /*--------------------------------------------------------------
-# F.A.Q Page
+# Form
 --------------------------------------------------------------*/
-.faq .basic h6 {
-  font-size: 18px;
-  font-weight: 600;
-  color: #4154f1;
+.card form .btn{
+  margin-top: 26px;
+
+}
+form .enviar{
+  background-color: #1977cc;
+  color: #ffffff;
+  border: 1px solid #1977cc;
+  padding: 8px 25px;
+  border-radius: 50px;
+}
+form .enviar:hover{
+  border: 1px solid #1979cc91;
+  background-color: #1979cc91;
+  color: #ffffff;
 }
 
-.faq .basic p {
-  color: #6980aa;
+
+table thead th{
+  background: #1977cc !important;
+  color: #fff !important;
+  padding: 12px !important;
 }
+
 
 /*--------------------------------------------------------------
 # Contact
@@ -1186,43 +1202,6 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Error 404
---------------------------------------------------------------*/
-.error-404 {
-  padding: 30px;
-}
-
-.error-404 h1 {
-  font-size: 180px;
-  font-weight: 700;
-  color: #4154f1;
-  margin-bottom: 0;
-  line-height: 150px;
-}
-
-.error-404 h2 {
-  font-size: 24px;
-  font-weight: 700;
-  color: #012970;
-  margin-bottom: 30px;
-}
-
-.error-404 .btn {
-  background: #51678f;
-  color: #fff;
-  padding: 8px 30px;
-}
-
-.error-404 .btn:hover {
-  background: #3e4f6f;
-}
-
-@media (min-width: 992px) {
-  .error-404 img {
-    max-width: 50%;
-  }
-}
 
 /*--------------------------------------------------------------
 # Footer
